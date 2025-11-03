@@ -1,7 +1,7 @@
 # Vacation-Tracking-System (VTS)
 This repo consists of system analaysis diagrams for a Vacation Tracking System
 
-## Vision
+## 1- Vision
 For many businesses today, there are a lot of challenges for managers to manage their employees’ time and vacations because of their increasing independence and the fact that they can work on multiple projects across different time zones.
 
 To address this problem, we need to create a **Vacation Tracking System (VTS)** to facilitate managing employees’ vacations and ensure it can be extended to integrate with other systems.
@@ -10,7 +10,7 @@ The **VTS** will provide employees with capabilities to manage their own vacatio
 
 ---
 
-## Functional Requirements
+## 2- Functional Requirements
 
 - The system should have **flexible user authorization** with different rules for validating and verifying leave time requests.  
 - The system should **support manager approval** if required.  
@@ -29,7 +29,7 @@ The **VTS** will provide employees with capabilities to manage their own vacatio
 
 ---
 
-## Non-Functional Requirements
+## 3- Non-Functional Requirements
 
 - The system should be **easy to use**, with a **user-friendly interface**.  
 - The system should **use existing hardware and middleware**.  
@@ -38,7 +38,7 @@ The **VTS** will provide employees with capabilities to manage their own vacatio
 
 ---
 
-## Constraints
+## 4- Constraints
 
 - If an employee has **two different roles**, they must use **two different login IDs** to manage those roles.  
 - The system must be **compatible with existing hardware**.  
@@ -46,7 +46,7 @@ The **VTS** will provide employees with capabilities to manage their own vacatio
 
 ---
 
-## Actors
+## 5- Actors
 
 ### 1. Employee
 The main user of the system. An employee uses VTS to manage their vacation time, including viewing, creating, and canceling vacation requests.
@@ -68,7 +68,11 @@ Responsible for:
 
 ---
 
-## Pseudocode
+[Download Sequence Diagram (PDF)](./Manage_Time_Sequence.pdf)
+
+---
+
+## 6- Pseudocode
 
 ```code
 Function createLeaveRequest() {
