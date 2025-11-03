@@ -67,18 +67,26 @@ Responsible for:
 - Collecting and archiving all **system log files**.
 
 ---
+
 ## 6- Flowchart Diagram
 
 [Flowchart Diagram (PDF)](./Manage_Time_Flowchart.drawio.pdf)
 
 ---
+
 ## 7- Sequence Diagram
 
 [Sequence Diagram (PDF)](./Manage_Time_Sequence.pdf)
 
 ---
 
-## 8- Pseudocode
+## 8- ER Diagram
+
+[ER Diagram (PDF)](./Manage_Time_ER.pdf)
+
+---
+
+## 9- Pseudocode
 
 ```code
 Function createLeaveRequest() {
