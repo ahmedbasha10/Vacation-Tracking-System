@@ -46,7 +46,19 @@ The **VTS** will provide employees with capabilities to manage their own vacatio
 
 ---
 
-## 5- Actors
+## 5- Assumptions
+
+The **Vacation Tracking System (VTS)** is not expected to be a heavily used application.  
+It will primarily serve approximately **2,000 company employees** and will utilize the organization’s **existing hardware infrastructure**.  
+
+However, since the system will also be integrated with other internal applications, the following considerations should be applied:
+
+- The system should be **designed for easy integration** with any other internal system.
+- The system should be **capable of handling approximately 300–500 concurrent requests**, which will be sufficient for the expected load.
+
+---
+
+## 6- Actors
 
 ### 1. Employee
 The main user of the system. An employee uses VTS to manage their vacation time, including viewing, creating, and canceling vacation requests.
@@ -68,25 +80,25 @@ Responsible for:
 
 ---
 
-## 6- Flowchart Diagram
+## 7- Flowchart Diagram
 
 [Flowchart Diagram (PDF)](./Manage_Time_Flowchart.drawio.pdf)
 
 ---
 
-## 7- Sequence Diagram
+## 8- Sequence Diagram
 
 [Sequence Diagram (PDF)](./Manage_Time_Sequence.pdf)
 
 ---
 
-## 8- ER Diagram
+## 9- ER Diagram
 
 [ER Diagram (PDF)](./Manage_Time_ER.pdf)
 
 ---
 
-## 9- Pseudocode
+## 10- Pseudocode
 
 ```code
 Function createLeaveRequest() {
