@@ -1,5 +1,72 @@
-# Vacation-Tracking-System
+# Vacation-Tracking-System (VTS)
 This repo consists of system analaysis diagrams for a Vacation Tracking System
+
+## Vision
+For many businesses today, there are a lot of challenges for managers to manage their employees’ time and vacations because of their increasing independence and the fact that they can work on multiple projects across different time zones.
+
+To address this problem, we need to create a **Vacation Tracking System (VTS)** to facilitate managing employees’ vacations and ensure it can be extended to integrate with other systems.
+
+The **VTS** will provide employees with capabilities to manage their own vacation time, sick leave, and personal time off, without needing to be experts in company or local facility leave policies.
+
+---
+
+## Functional Requirements
+
+- The system should have **flexible user authorization** with different rules for validating and verifying leave time requests.  
+- The system should **support manager approval** if required.  
+- The system should **provide access to requests** for the previous calendar year and allow requests to be made **up to 18 months in the future**.  
+- The system should have a **notification system** using e-mail to:
+  - Request manager approval.
+  - Notify employees of request status changes.  
+- The system should have a **log system** that keeps records of all transactions.  
+- The system should **provide a Web service** as an integration gateway between VTS and other internal systems.  
+- The system should **allow HR and system administrators** to override any actions.  
+- The system should **allow managers** to directly award personal leave time (within system-set limits).  
+- The employee should be able to:
+  - View vacation time requests.
+  - Create new requests.
+  - Cancel existing vacation time requests.
+
+---
+
+## Non-Functional Requirements
+
+- The system should be **easy to use**, with a **user-friendly interface**.  
+- The system should **use existing hardware and middleware**.  
+- The system should be implemented as an **extension to the existing intranet portal system** and should use the portal’s **single sign-on (SSO)** for authentication.  
+- The system should be a **Web application**, extending the organization’s existing intranet to provide a **convenient and natural entry point** for users.
+
+---
+
+## Constraints
+
+- If an employee has **two different roles**, they must use **two different login IDs** to manage those roles.  
+- The system must be **compatible with existing hardware**.  
+- The system must be **accessible through the internal network only**.
+
+---
+
+## Actors
+
+### 1. Employee
+The main user of the system. An employee uses VTS to manage their vacation time, including viewing, creating, and canceling vacation requests.
+
+### 2. Manager
+A manager has all the capabilities of a regular employee but also:
+- Approves vacation requests from direct subordinates.
+- Can award subordinates compensatory (comp) time, within system-defined limits.
+
+### 3. Clerk
+A member of the HR department responsible for ensuring employee information across HR systems is accurate and up to date.  
+The HR clerk can **add or remove records** and has sufficient rights to **view personal data**.  
+If the clerk is also an employee, they must use **separate login IDs** for each role.
+
+### 4. System Administrator
+Responsible for:
+- The smooth operation of system technical resources (e.g., web server, database).
+- Collecting and archiving all **system log files**.
+
+---
 
 ## Pseudocode
 
@@ -37,3 +104,4 @@ Function managerController() {
     return HOME_PAGE;
 }
 ```
+---
