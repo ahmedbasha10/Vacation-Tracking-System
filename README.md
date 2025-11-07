@@ -88,7 +88,13 @@ Responsible for:
 
 ## 8- Sequence Diagram
 
-[Sequence Diagram (PDF)](./Manage_Time_Sequence.pdf)
+### 8.1- Employee Sequence Diagram
+
+<img src="ManageTime/Employee_Manage_Time_Sequence_Diagram.png" alt="Employee Manage Time Sequence Diagram" width="1044"/>
+
+### 8.2- Manager Sequence Diagram
+
+<img src="ManageTime/Manager_Manage_Time_Sequence_Diagram.png" alt="Manager Manage Time Sequence Diagram" width="920"/>
 
 ---
 
