@@ -82,7 +82,7 @@ Responsible for:
 
 ## 7- Flowchart Diagram
 
-[Flowchart Diagram (PDF)](./Manage_Time_Flowchart.drawio.pdf)
+[Flowchart Diagram (PDF)](./Manage Time/Manage_Time_Flowchart.png)
 
 ---
 
