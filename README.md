@@ -80,31 +80,33 @@ Responsible for:
 
 ---
 
-## 7- Flowchart Diagram
+## 7- Manage Time Use Case
+
+### 7.1- Flowchart Diagram
 
 <img src="ManageTime/Manage_Time_Flowchart.png" alt="Flowchart Diagram" width="1297"/>
 
 ---
 
-## 8- Sequence Diagram
+### 7.2- Sequence Diagram
 
-### 8.1- Employee Sequence Diagram
+#### 7.2.1- Employee Sequence Diagram
 
 <img src="ManageTime/Employee_Manage_Time_Sequence_Diagram.png" alt="Employee Manage Time Sequence Diagram" width="1044"/>
 
-### 8.2- Manager Sequence Diagram
+#### 7.2.2- Manager Sequence Diagram
 
 <img src="ManageTime/Manager_Manage_Time_Sequence_Diagram.png" alt="Manager Manage Time Sequence Diagram" width="920"/>
 
 ---
 
-## 9- ER Diagram
+### 7.3- ER Diagram
 
 <img src="ManageTime/Manage_Time_ER_Diagram.png" alt="ER Diagram" width="1581"/>
 
 ---
 
-## 10- Pseudocode
+### 7.4- Pseudocode
 
 ```code
 Function createLeaveRequest() {
