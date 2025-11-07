@@ -100,7 +100,7 @@ Responsible for:
 
 ## 9- ER Diagram
 
-[ER Diagram (PDF)](./Manage_Time_ER.pdf)
+<img src="ManageTime/Manage_Time_ER_Diagram.png" alt="ER Diagram" width="1581"/>
 
 ---
 
