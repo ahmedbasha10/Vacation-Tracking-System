@@ -86,8 +86,6 @@ Responsible for:
 
 <img src="ManageTime/Manage_Time_Flowchart.png" alt="Flowchart Diagram" width="1297"/>
 
----
-
 ### 7.2- Sequence Diagram
 
 #### 7.2.1- Employee Sequence Diagram
@@ -98,13 +96,9 @@ Responsible for:
 
 <img src="ManageTime/Manager_Manage_Time_Sequence_Diagram.png" alt="Manager Manage Time Sequence Diagram" width="920"/>
 
----
-
 ### 7.3- ER Diagram
 
 <img src="ManageTime/Manage_Time_ER_Diagram.png" alt="ER Diagram" width="1581"/>
-
----
 
 ### 7.4- Pseudocode
 
@@ -142,4 +136,38 @@ Function managerController() {
     return HOME_PAGE;
 }
 ```
+
+---
+
+## 8- Withdraw request use-case
+
+### 8.1- Flowchart Diagram
+
+<img src="Withdraw/Withdraw_Request_Flowchart.png" alt="Flowchart Diagram" width="622"/>
+
+### 8.2- Sequence Diagram
+
+<img src="Withdraw/Withdraw_Vacation_Request_Sequence_Diagram.png" alt="Withdraw Request Sequence Diagram" width="869"/>
+
+### 8.3- Pseudocode
+
+```code
+Function withdrawVacationRequest(VacationRequest request) {
+    var requestID = getRequestID(request);
+    var EmployeeID = getEmployeeID(request);
+    
+    if(!isRequestOwnedByEmployee(requestID, EmployeeID)) {
+        return NOT_OWNER_ERROR;
+    }
+    
+    if(!isRequestWithdrawable(requestID)) {
+        return NOT_WITHDRAWABLE_ERROR;
+    }
+    
+    withdrawRequest(requestID);
+    updateRequestStatus(requestID);
+    notifyManagerOfWithdrawal(requestID);
+}
+```
+
 ---
