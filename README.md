@@ -171,3 +171,68 @@ Function withdrawVacationRequest(VacationRequest request) {
 ```
 
 ---
+
+## 9- Cancel request use-case
+
+### 9.1- Flowchart Diagram
+
+<img src="Cancel/Cancel_Vacation_Request_Flowchart.png" alt="Flowchart Diagram" width="309"/>
+
+### 9.2- Sequence Diagram
+
+<img src="Cancel/Cancel_Vacation_Request_Sequence_Diagram.png" alt="Cancel Request Sequence Diagram" width="869"/>
+
+### 9.3- Pseudocode
+
+```code
+Function cancelVacationRequest(VacationRequest request) {
+    if(!isRequestCancelable(request)) {
+        return NOT_CANCELABLE_ERROR;
+    }
+    
+    if(isInRecentPast(request)) {
+       enterCancelExplaination(request);
+    }
+    
+    cancelRequest(request);
+    updateRequestStatus(request);
+    notifyManagerOfCancellation(request);
+}
+```
+
+---
+
+## 10- Edit pending request use-case
+
+### 10.1- Flowchart Diagram
+
+<img src="Edit/Edit_Pending_Request_Flowchart.png" alt="Flowchart Diagram" width="542"/>
+
+### 10.2- Sequence Diagram
+
+<img src="Edit/Edit_Pending_Request_Sequence_Diagram.png" alt="Edit Pending Request Sequence Diagram" width="869"/>
+
+### 10.3- Pseudocode
+
+```code
+Function editVacationRequest(VacationRequest request) {
+     if(!isPending(request)) {
+        return NOT_PENDING_ERROR;
+     }
+     
+     if(userAction == WITHDRAW) {
+        withdrawVacationRequest(request);
+     } else if(userAction == EDIT) {
+        updateRequestDetails(request);
+     }
+     notifyManagerOfChanges(request);
+}
+
+Function updateRequestDetails(VacationRequest request) {
+    if(isValid(request)) {
+        saveRequestChanges(request);
+    } else {
+        return IN_VALID_REASON;
+    }
+} 
+```
