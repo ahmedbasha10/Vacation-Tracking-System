@@ -236,3 +236,23 @@ Function updateRequestDetails(VacationRequest request) {
     }
 } 
 ```
+
+---
+
+## 11- State Machine Diagram
+
+<img src="MainDiagrams/state_machine_diagram.png" alt="State Machine Diagram" width="1061"/>
+
+---
+
+## 12- Initial UI Mockup Design
+
+### 12.1- Employee View
+
+<img src="MainDiagrams/Employee_View_UI.jpg" alt="Initial UI Mockup Design" width="656"/>
+
+### 12.2- Manager View
+
+<img src="MainDiagrams/Manager_View_UI.png" alt="Initial UI Mockup Design Manager View" width="3000"/>
+
+---
